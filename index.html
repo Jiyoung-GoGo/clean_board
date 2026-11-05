@@ -17,8 +17,8 @@
 <dialog id="authDialog"><form id="authForm"><h2 id="authHeading">비밀번호 확인</h2><label for="authPw">비밀번호</label><input id="authPw" type="password" required autocomplete="off"><footer><button type="button" data-close="authDialog">취소</button><button id="authSubmit" type="submit" class="primary">확인</button></footer></form></dialog>
 <script>
 // 아래 두 값만 Supabase 대시보드의 Project URL / Publishable key(또는 anon key)로 교체
-const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL';
-const SUPABASE_KEY = 'YOUR_SUPABASE_PUBLISHABLE_KEY';
+const SUPABASE_URL = 'https://vuewowkvfsopjduyawfx.supabase.co/rest/v1/';
+const SUPABASE_KEY = 'sb_publishable_xAoO_4GzEzJl6B_zKOXShQ_wrRI0mLU';
 const $ = id => document.getElementById(id);
 let rows=[],opened=null,thread=null,adminPassword=null,entryToken=null,editing=null,authAction=null,busy=false;
 const configured=()=>SUPABASE_URL.startsWith('https://')&&!SUPABASE_URL.includes('YOUR_')&&!SUPABASE_KEY.includes('YOUR_');
